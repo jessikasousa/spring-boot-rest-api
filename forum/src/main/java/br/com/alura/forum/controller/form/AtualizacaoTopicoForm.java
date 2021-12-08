@@ -9,14 +9,11 @@ import br.com.alura.forum.modelo.Topico;
 import br.com.alura.forum.repository.TopicoRepository;
 
 public class AtualizacaoTopicoForm {
-	@NotNull
-	@NotEmpty
-	@Length(min = 5)
+	
+	@NotNull @NotEmpty @Length(min = 5)
 	private String titulo;
-
-	@NotNull
-	@NotEmpty
-	@Length(min = 10)
+	
+	@NotNull @NotEmpty @Length(min = 10)
 	private String mensagem;
 
 	public String getTitulo() {
@@ -44,6 +41,4 @@ public class AtualizacaoTopicoForm {
 		return topico;
 	}
 	
-	
-
 }

@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 import br.com.alura.forum.modelo.Resposta;
 
 public class RespostaDto {
+
 	private Long id;
 	private String mensagem;
 	private LocalDateTime dataCriacao;
@@ -14,7 +15,7 @@ public class RespostaDto {
 		this.id = resposta.getId();
 		this.mensagem = resposta.getMensagem();
 		this.dataCriacao = resposta.getDataCriacao();
-		this.nomeAutor = resposta.getAutor().getNome();				
+		this.nomeAutor = resposta.getAutor().getNome();
 	}
 
 	public Long getId() {
@@ -33,5 +34,4 @@ public class RespostaDto {
 		return nomeAutor;
 	}
 	
-
 }
